@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="../Adv Santos/1.png" alt="logo">
+                </div>
+                <div class="toggle">
+                    <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+                </div>
+                <ul class="menu">
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="Atuacao.html">Atuações</a></li>
+                    <li><a href="profissional.html">Profissionais</a></li>
+                    <li><a href="./Form.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+        </div>
+        <div class="content">
+            <div class="text">
+                <h1>Escritorio</h1>
+                <br>
+                <div class="divsobre">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tortor sed dolor dignissim bibendum ut id urna. Nulla at efficitur mi. Mauris in elementum dolor. Integer quis porttitor orci, pretium iaculis sapien. Mauris porta eget nisi sed eleifend. In leo magna, blandit non finibus in, viverra eget odio. Etiam a pulvinar lorem. Etiam consectetur elit non porttitor convallis. Fusce tempor massa id lacinia interdum. Quisque convallis vitae justo nec volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ex mi, ultricies ut ex vel, hendrerit congue est.
+
+                        Mauris quis ex eu magna ornare congue. Etiam posuere nisl ut felis placerat maximus. Mauris in viverra odio. Mauris ornare, justo quis ullamcorper malesuada, odio neque cursus lectus, eu varius est sem sed dolor. Morbi erat orci, pharetra a eros a, interdum aliquam erat. Phasellus non tellus non quam mollis cursus et fermentum orci. Vivamus nec risus at nibh pellentesque egestas vitae nec mi. Etiam eget condimentum orci. Nullam non lobortis orci. Proin ornare blandit nisl, eu dignissim est eleifend at.
+
+                        Integer neque ipsum, varius id rhoncus vitae, molestie et nulla. Donec interdum lacus id commodo eleifend. Aenean vel velit eros. Aenean sed magna scelerisque, egestas lacus sit amet, vehicula elit. Praesent ut metus et felis ornare tempus. Nunc in maximus mauris, id laoreet lacus. In volutpat dignissim dolor, at viverra mi.
+
+                        Duis sollicitudin vulputate consectetur. Nulla hendrerit vehicula quam interdum efficitur. Mauris feugiat porttitor orci sit amet faucibus. Etiam malesuada, libero non convallis tincidunt, risus lacus porta leo, eu dictum urna ex in nulla. Mauris lobortis nulla tincidunt accumsan tristique. Aliquam erat volutpat. Curabitur vitae ultricies leo, at mollis urna. Phasellus bibendum id lacus vitae imperdiet. Pellentesque laoreet sapien nisl, sit amet tincidunt massa vehicula eget. Morbi ac felis quis orci finibus venenatis. Pellentesque erat mauris, egestas sed facilisis vel, sagittis in lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut mollis enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+                        Suspendisse commodo tempus erat sit amet feugiat. Nunc non cursus purus. Aliquam viverra, arcu nec elementum finibus, est nibh aliquam orci, eu convallis ipsum leo non mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc facilisis libero non aliquam hendrerit. In hac habitasse platea dictumst. Aliquam eget lorem libero. Suspendisse sit amet erat rhoncus lorem facilisis vestibulum. Nullam justo mauris, porta id feugiat eget, fringilla nec nulla. Suspendisse potenti. Duis libero dui, facilisis in accumsan sit amet, pretium a elit. Quisque volutpat neque a massa commodo venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+                        Duis eget ipsum lobortis, ultricies ex et</p>
+                        <img id="escritorio" class="Escritorio" src="../Adv Santos/123.jpg">
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-sectioncontact">
+                    <div class="imgroda"><img src="../Adv Santos/1.png" alt="logo"></div>
+                    <p>Rua Capitão José de Macedo 340, 5º andar, sala 503.</p>
+                    <p>Condominio Edíficio Trade Center</p>
+                    <p>Centro - Jacareí/SP</p>
+                    <p>Email: contato@exemplo.com</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <div class="rede_social">
+                        <ul>
+                            <li><a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="https://www.whatsapp.com"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".menu").hasClass("active")) {
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html('<ion-icon name="menu-outline"></ion-icon>');
+                } else {
+                    $(".menu").addClass("active");
+                    $(this).find("a").html('<ion-icon name="close-outline"></ion-icon>');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
