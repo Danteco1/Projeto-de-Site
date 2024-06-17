@@ -3,22 +3,127 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Santos e Vidal Advocacia</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <script src='main.js'></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+        }
+        .wrapper {
+            background: url('https://i.imgur.com/HxS4GM9.png') no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1vh 5vh;
+            background: rgba(0, 0, 0, 0.5);
+            font-family: Playfair Display;
+
+        
+        }
+        .navbar .logo img {
+            max-width: 15vh;
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .content {
+            text-align: center;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .content h2 {
+            font-size: 60px;
+            text-align: left;
+            padding:20px;
+            font-family: Playfair Display;
+        }
+        .content p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .footer p, .footer a {
+            color: #fff;
+        }
+        .imgroda img {
+    max-width: 12vh;
+}
+@media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 2vh 2vh;
+            }
+            .navbar .logo img {
+                max-width: 12vh;
+            }
+            .menu {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .content {
+                padding: 20px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                padding: 1vh 1vh;
+            }
+            .navbar .logo img {
+                max-width: 8vh;
+            }
+            .menu {
+                gap: 5px;
+            }
+            .content {
+                padding: 10px;
+            }
+            .content h2 {
+                font-size: 18px;
+            }
+            .imgroda img {
+                max-width: 10vh;
+            }
+            .footer p {
+                font-size: 14px;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <div class="wrapper">
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <img src="../Adv Santos/1.png" alt="logo">
-                </div>
-                <div class="toggle">
-                    <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+                <a href="Index.html">    <img src="https://i.imgur.com/rwIXwDm.png" alt="logo"></a>
                 </div>
                 <ul class="menu">
                     <li><a href="./Index.html">Home</a></li>
@@ -28,61 +133,24 @@
                 </ul>
             </nav>
         </header>
-        <div class="banner">
-        </div>
         <div class="content">
-            <div class="text">
-                <h1>Escritorio</h1>
-                <br>
-                <div class="divsobre">
-                      <p>     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tortor sed dolor dignissim bibendum ut id urna. Nulla at efficitur mi. Mauris in elementum dolor. Integer quis porttitor orci, pretium iaculis sapien. Mauris porta eget nisi sed eleifend. In leo magna, blandit non finibus in, viverra eget odio. Etiam a pulvinar lorem. Etiam consectetur elit non porttitor convallis. Fusce tempor massa id lacinia interdum. Quisque convallis vitae justo nec volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ex mi, ultricies ut ex vel, hendrerit congue est.
-
-                        Mauris quis ex eu magna ornare congue. Etiam posuere nisl ut felis placerat maximus. Mauris in viverra odio. Mauris ornare, justo quis ullamcorper malesuada, odio neque cursus lectus, eu varius est sem sed dolor. Morbi erat orci, pharetra a eros a, interdum aliquam erat. Phasellus non tellus non quam mollis cursus et fermentum orci. Vivamus nec risus at nibh pellentesque egestas vitae nec mi. Etiam eget condimentum orci. Nullam non lobortis orci. Proin ornare blandit nisl, eu dignissim est eleifend at.
-
-                        Integer neque ipsum, varius id rhoncus vitae, molestie et nulla. Donec interdum lacus id commodo eleifend. Aenean vel velit eros. Aenean sed magna scelerisque, egestas lacus sit amet, vehicula elit. Praesent ut metus et felis ornare tempus. Nunc in maximus mauris, id laoreet lacus. In volutpat dignissim dolor, at viverra mi.
-
-                        Duis sollicitudin vulputate consectetur. Nulla hendrerit vehicula quam interdum efficitur. Mauris feugiat porttitor orci sit amet faucibus. Etiam malesuada, libero non convallis tincidunt, risus lacus porta leo, eu dictum urna ex in nulla. Mauris lobortis nulla tincidunt accumsan tristique. Aliquam erat volutpat. Curabitur vitae ultricies leo, at mollis urna. Phasellus bibendum id lacus vitae imperdiet. Pellentesque laoreet sapien nisl, sit amet tincidunt massa vehicula eget. Morbi ac felis quis orci finibus venenatis. Pellentesque erat mauris, egestas sed facilisis vel, sagittis in lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut mollis enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-                        Suspendisse commodo tempus erat sit amet feugiat. Nunc non cursus purus. Aliquam viverra, arcu nec elementum finibus, est nibh aliquam orci, eu convallis ipsum leo non mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc facilisis libero non aliquam hendrerit. In hac habitasse platea dictumst. Aliquam eget lorem libero. Suspendisse sit amet erat rhoncus lorem facilisis vestibulum. Nullam justo mauris, porta id feugiat eget, fringilla nec nulla. Suspendisse potenti. Duis libero dui, facilisis in accumsan sit amet, pretium a elit. Quisque volutpat neque a massa commodo venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-
-                        Duis eget ipsum lobortis, ultricies ex et</p> 
-                        <img src="../Adv Santos/123.jpg" alt="escritorio" id="escritorio">
-                </div>
-            </div>
-        </div>
+            <a href="https://wa.me/message/BGC6FN57USMYK1"
+    target="_blank"
+    style="position:fixed;bottom:20px;right:30px;">
+    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+</a>
+              <h2>Transformando o complexo em<br>Estratégias claras e eficazes.</h2>
         </div>
         <footer class="footer">
             <div class="footer-content">
-                <div class="footer-sectioncontact">
-                    <div class="imgroda"><img src="../Adv Santos/1.png" alt="logo"></div>
-                    <p>Rua Capitão José de Macedo 340, 5º andar, sala 503.</p>
-                    <p>Condominio Edíficio Trade Center</p>
-                    <p>Centro - Jacareí/SP</p>
-                    <p>Email: contato@exemplo.com</p>
-                    <p>Telefone: (11) 1234-5678</p>
-                    <div class="rede_social">
-                        <ul>
-                            <li><a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li><a href="https://www.whatsapp.com"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="imgroda"><img src="https://i.imgur.com/rwIXwDm.png" alt="imgroda"></div>
+                <p class="footer-text">Rua Capitão José de Macedo 340, 5º andar, sala 503. Condominio Edíficio Trade Center Centro - Jacareí/SP<br>
+                    Email: contato@exemplo.com<br>
+                    Telefone: (11) 1234-5678</p>
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(function() {
-            $(".toggle").on("click", function() {
-                if ($(".menu").hasClass("active")) {
-                    $(".menu").removeClass("active");
-                    $(this).find("a").html('<ion-icon name="menu-outline"></ion-icon>');
-                } else {
-                    $(".menu").addClass("active");
-                    $(this).find("a").html('<ion-icon name="close-outline"></ion-icon>');
-                }
-            });
-        });
-    </script>
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
 </body>
 </html>

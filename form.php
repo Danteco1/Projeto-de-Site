@@ -26,7 +26,7 @@
                 <li><a href="./Index.html">Home</a></li>
                 <li><a href="Atuacao.html">Atuações</a></li>
                 <li><a href="profissional.html">Profissionais</a></li>
-                <li><a href="./Form.html">Contato</a></li>
+                <li><a href="./formulario.php">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -41,7 +41,45 @@
             <h1>Formulario</h1>
             <div class="divform">
                 <div class="conteudoadv">
-                    <form action="send_email.php" method="POST">
+                    <?php
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                        // Pega os dados do formulário
+                        $name = htmlspecialchars($_POST['name']);
+                        $email = htmlspecialchars($_POST['email']);
+                        $phone = htmlspecialchars($_POST['phone']);
+                        $message = htmlspecialchars($_POST['message']);
+                        $recaptcha_response = $_POST['g-recaptcha-response'];
+
+                        // Verifica o CAPTCHA
+                        $secret_key = 'SUA_CHAVE_SECRETA';
+                        $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret_key&response=$recaptcha_response");
+                        $response_keys = json_decode($response, true);
+
+                        if (intval($response_keys["success"]) !== 1) {
+                            echo "<p>Por favor, complete o CAPTCHA.</p>";
+                        } else {
+                            // Configurações do e-mail
+                            $to = "seu_email@dominio.com";  // Substitua pelo seu endereço de e-mail
+                            $subject = "Nova mensagem do formulário de contato";
+                            $headers = "From: " . $email . "\r\n" .
+                                       "Reply-To: " . $email . "\r\n" .
+                                       "X-Mailer: PHP/" . phpversion();
+                            
+                            $body = "Nome: $name\n";
+                            $body .= "E-mail: $email\n";
+                            $body .= "Telefone: $phone\n\n";
+                            $body .= "Mensagem:\n$message\n";
+
+                            // Envia o e-mail
+                            if (mail($to, $subject, $body, $headers)) {
+                                echo "<p>Mensagem enviada com sucesso!</p>";
+                            } else {
+                                echo "<p>Erro ao enviar mensagem.</p>";
+                            }
+                        }
+                    }
+                    ?>
+                    <form action="formulario.php" method="POST">
                         <label for="name">Nome:</label>
                         <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
                         <br>
